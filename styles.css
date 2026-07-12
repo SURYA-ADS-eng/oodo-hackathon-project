@@ -67,10 +67,10 @@ button,input,select{font:inherit}
 .pill.success{background:rgba(54,201,143,.15);color:var(--success)}
 .pill.warning{background:rgba(255,184,77,.15);color:var(--warning)}
 .main{padding:24px;overflow:auto}
-.topbar{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:22px}
-.topbar h2{margin:0 0 4px}
-.topbar p{margin:0;color:var(--muted)}
-.topbar-actions{display:flex;gap:10px;align-items:center}
+.topBar{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:22px}
+.topBar h2{margin:0 0 4px}
+.topBar p{margin:0;color:var(--muted)}
+.topBar-actions{display:flex;gap:10px;align-items:center}
 select,input{
   background:var(--panel);
   color:var(--text);
@@ -136,5 +136,5 @@ th,td{padding:12px;border-bottom:1px solid var(--border);text-align:left}
 }
 @media (max-width:720px){
   .kpi-grid,.quick-actions,.asset-grid,.reports-grid,.workflow{grid-template-columns:1fr}
-  .topbar{flex-direction:column;align-items:flex-start}
+  .topBar{flex-direction:column;align-items:flex-start}
 }
