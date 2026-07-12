@@ -1,6 +1,7 @@
 <!doctype html>
 <head>
     <script src="../sidebar.js"></script>
+    <script src=book-resource.js"></script>
     <link rel="stylesheet" href="profile.css" />
 </head>
 <body>
@@ -40,5 +41,107 @@
                 </li>
             </ul>
         </aside>
-    <h2>Profile</h1>
+        <div class="profile-container">
+
+            <div class="profile-header">
+                <img src="https://avatars.githubusercontent.com/u/226227479?v=4" alt="Profile Image">
+
+                <div>
+                    <h1 id="name">John Doe</h1>
+                    <p id="role">Software Engineer</p>
+                    <p id="department">Engineering Department</p>
+                </div>
+            </div>
+
+
+            <div class="profile-section">
+                <h2>Personal Information</h2>
+
+                <div class="info-grid">
+
+                    <div>
+                        <label>Email</label>
+                        <p id="email">john.doe@example.com</p>
+                    </div>
+
+                    <div>
+                        <label>Phone</label>
+                        <p id="phone">+91 9876543210</p>
+                    </div>
+
+                    <div>
+                        <label>Date of Birth</label>
+                        <p id="dob">12-05-1998</p>
+                    </div>
+
+                    <div>
+                        <label>Location</label>
+                        <p id="location">Coimbatore, India</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="profile-section">
+
+                <h2>Professional Details</h2>
+
+                <div class="info-grid">
+
+                    <div>
+                        <label>Employee ID</label>
+                        <p id="employeeId">EMP1024</p>
+                    </div>
+
+
+                    <div>
+                        <label>Joining Date</label>
+                        <p id="joiningDate">10-08-2023</p>
+                    </div>
+
+
+                    <div>
+                        <label>Experience</label>
+                        <p id="experience">3 Years</p>
+                    </div>
+
+
+                    <div>
+                        <label>Status</label>
+                        <p class="status" id="status">Active</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="profile-section">
+
+                <h2>Skills</h2>
+
+                <div class="skills">
+
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>SQL</span>
+                    <span>REST API</span>
+
+                </div>
+
+            </div>
+
+
+            <button onclick="editProfile()">
+                Edit Profile
+            </button>
+
+
+        </div>
+
+
 </body>

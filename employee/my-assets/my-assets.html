@@ -1,41 +1,133 @@
 <!doctype html>
-<head>
-    <link rel="stylesheet" href="my-assets.css" />
-</head>
-<body>
-    <div class="container">
-        <aside class="sidebar">
-            <h2>AssetFlow</h2>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-            <ul>
-                <li>
-                    <a href="../employee_dashboard.html">Dashboard</a>
-                </li>
+        <link rel="stylesheet" href="my-assets.css" />
+    </head>
 
-                <li class="active">
-                    <a href="../my-assets/my-assets.html">My Assets</a>
-                </li>
+    <body>
+        <div class="container">
+            <aside class="sidebar">
+                <h2>AssetFlow</h2>
 
-                <li>
-                    <a href="../book-resources\book-resources.html"
-                        >Book Resources</a
-                    >
-                </li>
+                <ul>
+                    <li>
+                        <a href="../employee_dashboard.html"> Dashboard </a>
+                    </li>
 
-                <li>
-                    <a href="../raise-request\raise-request.html"
-                        >Raise Maintenance Request</a
-                    >
-                </li>
+                    <li class="active">
+                        <a href="../my-assets/my-assets.html"> My Assets </a>
+                    </li>
 
-                    <a href="../notification/notification.html"
-                        >Notifications</a
-                    >
-                </li>
-                <li>
-                    <a href="../profile/profile.html">Profile</a>
-                </li>
-            </ul>
-        </aside>
-    <h1>My Assets</h1>
-</body>
+                    <li>
+                        <a href="../book-resources/book-resources.html">
+                            Book Resources
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../raise-request/raise-request.html">
+                            Raise Maintenance Request
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../notification/notification.html">
+                            Notifications
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../profile/profile.html"> Profile </a>
+                    </li>
+                </ul>
+            </aside>
+
+            <main class="main-content">
+                <header>
+                    <h1>My Assets</h1>
+
+                    <p class="subtitle">
+                        View and track assets assigned to you
+                    </p>
+                </header>
+
+                <section class="asset-grid">
+                    <div class="asset-card">
+                        <div class="asset-icon">💻</div>
+
+                        <h2>Dell Latitude 5420</h2>
+
+                        <p class="asset-tag">Asset Tag: AF-0114</p>
+
+                        <span class="status allocated"> Allocated </span>
+
+                        <div class="asset-details">
+                            <p>📍 Location: IT Department</p>
+
+                            <p>📅 Assigned: 15 June 2026</p>
+
+                            <p>🔧 Condition: Good</p>
+                        </div>
+                    </div>
+
+                    <div class="asset-card">
+                        <div class="asset-icon">📱</div>
+
+                        <h2>Samsung Galaxy S24</h2>
+
+                        <p class="asset-tag">Asset Tag: AF-0203</p>
+
+                        <span class="status allocated"> Allocated </span>
+
+                        <div class="asset-details">
+                            <p>📍 Location: Mobile Inventory</p>
+
+                            <p>📅 Assigned: 20 June 2026</p>
+
+                            <p>🔧 Condition: Excellent</p>
+                        </div>
+                    </div>
+
+                    <div class="asset-card">
+                        <div class="asset-icon">🎧</div>
+
+                        <h2>Noise Cancelling Headset</h2>
+
+                        <p class="asset-tag">Asset Tag: AF-0345</p>
+
+                        <span class="status maintenance">
+                            Under Maintenance
+                        </span>
+
+                        <div class="asset-details">
+                            <p>📍 Location: Service Center</p>
+
+                            <p>📅 Assigned: 05 May 2026</p>
+
+                            <p>🔧 Issue: Speaker Failure</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="history">
+                    <h2>Recent Asset Activity</h2>
+
+                    <div class="history-card">
+                        <p>🔄 Laptop assigned to you</p>
+
+                        <span> 15 June 2026 </span>
+                    </div>
+
+                    <div class="history-card">
+                        <p>🛠 Maintenance request raised for headset</p>
+
+                        <span> 10 July 2026 </span>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>

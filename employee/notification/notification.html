@@ -1,42 +1,142 @@
 <!doctype html>
-<head>
-    <link rel="stylesheet" href="notification.css" />
-</head>
-<body>
-    <div class="container">
-        <aside class="sidebar">
-            <h2>AssetFlow</h2>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-            <ul>
-                <li>
-                    <a href="../employee_dashboard.html">Dashboard</a>
-                </li>
+        <link rel="stylesheet" href="notification.css" />
 
-                <li>
-                    <a href="../my-assets/my-assets.html">My Assets</a>
-                </li>
+        <script src="notification.js" defer></script>
+    </head>
 
-                <li>
-                    <a href="../book-resources\book-resources.html"
-                        >Book Resources</a
-                    >
-                </li>
+    <body>
+        <div class="container">
+            <aside class="sidebar">
+                <h2>AssetFlow</h2>
 
-                <li>
-                    <a href="../raise-request\raise-request.html"
-                        >Raise Maintenance Request</a
-                    >
-                </li>
+                <ul>
+                    <li>
+                        <a href="../employee_dashboard.html"> Dashboard </a>
+                    </li>
 
-                <li class="active">
-                    <a href="../notification/notification.html"
-                        >Notifications</a
-                    >
-                </li>
-                <li>
-                    <a href="../profile/profile.html">Profile</a>
-                </li>
-            </ul>
-        </aside>
-    <h2>Notification</h1>
-</body>
+                    <li>
+                        <a href="../my-assets/my-assets.html"> My Assets </a>
+                    </li>
+
+                    <li>
+                        <a href="../book-resources/book-resources.html">
+                            Book Resources
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../raise-request/raise-request.html">
+                            Raise Maintenance Request
+                        </a>
+                    </li>
+
+                    <li class="active">
+                        <a href="../notification/notification.html">
+                            Notifications
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../profile/profile.html"> Profile </a>
+                    </li>
+                </ul>
+            </aside>
+
+            <main class="main-content">
+                <header>
+                    <h1>Notifications</h1>
+
+                    <p class="subtitle">
+                        Stay updated with asset activities and system alerts
+                    </p>
+                </header>
+
+                <section class="notification-summary">
+                    <div class="summary-card">
+                        <h2>3</h2>
+
+                        <p>Unread Notifications</p>
+                    </div>
+
+                    <div class="summary-card">
+                        <h2>2</h2>
+
+                        <p>Maintenance Updates</p>
+                    </div>
+
+                    <div class="summary-card">
+                        <h2>1</h2>
+
+                        <p>Booking Reminders</p>
+                    </div>
+                </section>
+
+                <section class="notifications">
+                    <h2>Recent Notifications</h2>
+
+                    <div class="notification-card unread">
+                        <div class="notification-icon">💻</div>
+
+                        <div class="notification-content">
+                            <h3>Asset Assigned</h3>
+
+                            <p>
+                                Dell Latitude 5420 (AF-0114) has been assigned
+                                to you.
+                            </p>
+
+                            <span> 10 minutes ago </span>
+                        </div>
+                    </div>
+
+                    <div class="notification-card">
+                        <div class="notification-icon">🛠️</div>
+
+                        <div class="notification-content">
+                            <h3>Maintenance Approved</h3>
+
+                            <p>
+                                Your headset maintenance request has been
+                                approved.
+                            </p>
+
+                            <span> 2 hours ago </span>
+                        </div>
+                    </div>
+
+                    <div class="notification-card">
+                        <div class="notification-icon">🏢</div>
+
+                        <div class="notification-content">
+                            <h3>Booking Confirmed</h3>
+
+                            <p>
+                                Conference Room A booked successfully for
+                                tomorrow.
+                            </p>
+
+                            <span> Yesterday </span>
+                        </div>
+                    </div>
+
+                    <div class="notification-card alert">
+                        <div class="notification-icon">⚠️</div>
+
+                        <div class="notification-content">
+                            <h3>Overdue Return Alert</h3>
+
+                            <p>Asset AF-0231 return date has exceeded.</p>
+
+                            <span> 3 days ago </span>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>

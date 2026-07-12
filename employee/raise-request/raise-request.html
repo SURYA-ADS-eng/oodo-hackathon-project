@@ -1,42 +1,133 @@
 <!doctype html>
-<head>
-    <link rel="stylesheet" href="raise-request.css" />
-</head>
-<body>
-    <div class="container">
-        <aside class="sidebar">
-            <h2>AssetFlow</h2>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-            <ul>
-                <li>
-                    <a href="../employee_dashboard.html">Dashboard</a>
-                </li>
+        <link rel="stylesheet" href="raise-request.css" />
 
-                <li>
-                    <a href="../my-assets/my-assets.html">My Assets</a>
-                </li>
+        <script src="raise-request.js" defer></script>
+    </head>
 
-                <li>
-                    <a href="../book-resources\book-resources.html"
-                        >Book Resources</a
-                    >
-                </li>
+    <body>
+        <div class="container">
+            <aside class="sidebar">
+                <h2>AssetFlow</h2>
 
-                <li class="active">
-                    <a href="../raise-request\raise-request.html"
-                        >Raise Maintenance Request</a
-                    >
-                </li>
+                <ul>
+                    <li>
+                        <a href="../employee_dashboard.html"> Dashboard </a>
+                    </li>
 
-                <li>
-                    <a href="../notification/notification.html"
-                        >Notifications</a
-                    >
-                </li>
-                <li>
-                    <a href="../profile/profile.html">Profile</a>
-                </li>
-            </ul>
-        </aside>
-    <h1>Raise Request</h1>
-</body>
+                    <li>
+                        <a href="../my-assets/my-assets.html"> My Assets </a>
+                    </li>
+
+                    <li>
+                        <a href="../book-resources/book-resources.html">
+                            Book Resources
+                        </a>
+                    </li>
+
+                    <li class="active">
+                        <a href="../raise-request/raise-request.html">
+                            Raise Maintenance Request
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../notification/notification.html">
+                            Notifications
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../profile/profile.html"> Profile </a>
+                    </li>
+                </ul>
+            </aside>
+
+            <main class="main-content">
+                <header>
+                    <h1>Maintenance Request</h1>
+
+                    <p class="subtitle">
+                        Report issues and track asset maintenance progress
+                    </p>
+                </header>
+
+                <section class="request-grid">
+                    <div class="request-card">
+                        <div class="icon">💻</div>
+
+                        <h2>Dell Latitude 5420</h2>
+
+                        <p>Asset Tag: AF-0114</p>
+
+                        <span class="issue"> Battery Issue </span>
+
+                        <button>Raise Request</button>
+                    </div>
+
+                    <div class="request-card">
+                        <div class="icon">🖨️</div>
+
+                        <h2>HP Laser Printer</h2>
+
+                        <p>Asset Tag: AF-0241</p>
+
+                        <span class="issue"> Paper Jam Problem </span>
+
+                        <button>Raise Request</button>
+                    </div>
+
+                    <div class="request-card">
+                        <div class="icon">🎧</div>
+
+                        <h2>Noise Cancelling Headset</h2>
+
+                        <p>Asset Tag: AF-0345</p>
+
+                        <span class="issue"> Speaker Failure </span>
+
+                        <button>Raise Request</button>
+                    </div>
+                </section>
+
+                <section class="requests">
+                    <h2>My Maintenance Requests</h2>
+
+                    <div class="request-status">
+                        <div>
+                            <h3>Dell Latitude 5420</h3>
+
+                            <p>Battery replacement required</p>
+                        </div>
+
+                        <span class="pending"> Pending </span>
+                    </div>
+
+                    <div class="request-status">
+                        <div>
+                            <h3>Noise Cancelling Headset</h3>
+
+                            <p>Technician assigned</p>
+                        </div>
+
+                        <span class="progress"> In Progress </span>
+                    </div>
+
+                    <div class="request-status">
+                        <div>
+                            <h3>Monitor Dell 24"</h3>
+
+                            <p>Display issue fixed</p>
+                        </div>
+
+                        <span class="resolved"> Resolved </span>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>

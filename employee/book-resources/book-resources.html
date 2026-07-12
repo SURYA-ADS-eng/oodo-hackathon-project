@@ -1,41 +1,168 @@
 <!doctype html>
-<head>
-    <link rel="stylesheet" href="../my-assets/my-assets.css" />
-</head>
-<body>
-    <div class="container">
-        <aside class="sidebar">
-            <h2>AssetFlow</h2>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-            <ul>
-                <li>
-                    <a href="../employee_dashboard.html">Dashboard</a>
-                </li>
+        <link rel="stylesheet" href="book-resource.css" />
 
-                <li>
-                    <a href="../my-assets/my-assets.html">My Assets</a>
-                </li>
+        <script src="book-resources.js" defer></script>
+    </head>
 
-                <li class="active">
-                    <a href="../book-resources\book-resources.html"
-                        >Book Resources</a
-                    >
-                </li>
+    <body>
+        <div class="container">
+            <aside class="sidebar">
+                <h2>AssetFlow</h2>
 
-                <li>
-                    <a href="../raise-request\raise-request.html"
-                        >Raise Maintenance Request</a
-                    >
-                </li>
+                <ul>
+                    <li>
+                        <a href="../employee_dashboard.html"> Dashboard </a>
+                    </li>
 
-                    <a href="../notification/notification.html"
-                        >Notifications</a
-                    >
-                </li>
-                <li>
-                    <a href="../profile/profile.html">Profile</a>
-                </li>
-            </ul>
-        </aside>
-    <h1>Book Resources</h1>
-</body>
+                    <li>
+                        <a href="../my-assets/my-assets.html"> My Assets </a>
+                    </li>
+
+                    <li class="active">
+                        <a href="../book-resources/book-resources.html">
+                            Book Resources
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../raise-request/raise-request.html">
+                            Raise Maintenance Request
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../notification/notification.html">
+                            Notifications
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../profile/profile.html"> Profile </a>
+                    </li>
+                </ul>
+            </aside>
+
+            <main class="main-content">
+                <header>
+                    <h1>Book Resources</h1>
+
+                    <p class="subtitle">
+                        Reserve shared organizational resources without
+                        conflicts
+                    </p>
+                </header>
+
+                <section class="resource-grid">
+                    <div class="resource-card">
+                        <div class="icon">🏢</div>
+
+                        <h2>Conference Room A</h2>
+
+                        <p>Meeting Room</p>
+
+                        <span class="available"> Available </span>
+
+                        <div class="details">
+                            <p>📍 Block A - Floor 2</p>
+
+                            <p>👥 Capacity: 15 People</p>
+                        </div>
+
+                        <button>Book Now</button>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="icon">🚗</div>
+
+                        <h2>Company Vehicle</h2>
+
+                        <p>Transport Resource</p>
+
+                        <span class="available"> Available </span>
+
+                        <div class="details">
+                            <p>📍 Parking Area</p>
+
+                            <p>🚘 TN38 AB 1234</p>
+                        </div>
+
+                        <button>Book Now</button>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="icon">📽️</div>
+
+                        <h2>Projector X500</h2>
+
+                        <p>Presentation Equipment</p>
+
+                        <span class="booked"> Booked </span>
+
+                        <div class="details">
+                            <p>📍 IT Department</p>
+
+                            <p>🕒 Available after 4 PM</p>
+                        </div>
+
+                        <button disabled>Not Available</button>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="icon">💻</div>
+
+                        <h2>Development Laptop</h2>
+
+                        <p>IT Equipment</p>
+
+                        <span class="available"> Available </span>
+
+                        <div class="details">
+                            <p>📍 IT Store</p>
+
+                            <p>💻 Dell Latitude</p>
+                        </div>
+
+                        <button>Book Now</button>
+                    </div>
+                </section>
+
+                <section class="bookings">
+                    <h2>Upcoming Bookings</h2>
+
+                    <div class="booking-card">
+                        <div>
+                            <h3>Conference Room A</h3>
+
+                            <p>Booked by: Arun Kumar</p>
+                        </div>
+
+                        <div>
+                            <p>📅 12 July 2026</p>
+
+                            <p>🕙 10:00 AM - 11:30 AM</p>
+                        </div>
+                    </div>
+
+                    <div class="booking-card">
+                        <div>
+                            <h3>Company Vehicle</h3>
+
+                            <p>Booked by: Priya Sharma</p>
+                        </div>
+
+                        <div>
+                            <p>📅 13 July 2026</p>
+
+                            <p>🕘 9:00 AM - 1:00 PM</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
