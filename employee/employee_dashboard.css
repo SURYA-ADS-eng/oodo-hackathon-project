@@ -1,0 +1,314 @@
+/* ==========================================================================
+   1. Reset & Global Styles
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+    min-height: 100vh;
+}
+
+/* ==========================================================================
+   2. Layout Container (Sidebar + Main Content)
+   ========================================================================== */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ==========================================================================
+   3. Sidebar Navigation
+   ========================================================================== */
+.sidebar {
+    width: 260px;
+    background-color: #0f172a; /* Deep slate */
+    color: #ffffff;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+    padding-left: 12px;
+    letter-spacing: -0.5px;
+    color: #38bdf8; /* Soft blue accent */
+}
+
+.sidebar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sidebar li {
+    padding: 12px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #94a3b8;
+    transition: all 0.2s ease;
+}
+
+.sidebar li:hover {
+    background-color: #1e293b;
+    color: #f8fafc;
+}
+
+.sidebar li.active {
+    background-color: #2563eb; /* Vibrant primary blue */
+    color: #ffffff;
+}
+
+/* Handle the logout button distinctly if it's at the bottom */
+.sidebar li:last-child {
+    margin-top: auto;
+    color: #f87171;
+}
+
+.sidebar li:last-child:hover {
+    background-color: #451a03;
+    color: #fecaca;
+}
+
+/* ==========================================================================
+   4. Main Content Area
+   ========================================================================== */
+.main-content {
+    flex-grow: 1;
+    padding: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Header */
+.header {
+    margin-bottom: 32px;
+}
+
+.header h1 {
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.header p {
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+/* Sections Global */
+.section {
+    margin-top: 40px;
+}
+
+.section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 16px;
+}
+
+/* ==========================================================================
+   5. KPI Cards Grid (Responsive Grid Layout)
+   ========================================================================== */
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #64748b;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+/* ==========================================================================
+   6. Alerts Section ("Requires Attention")
+   ========================================================================== */
+.alert-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #ef4444; /* Red warning edge */
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* Style dynamic audit progress alerts slightly differently if desired */
+.alert-card:last-child {
+    border-left-color: #3b82f6; /* Blue for neutral info/progress */
+}
+
+.alert-card h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #0f172a;
+    min-width: 200px;
+}
+
+.alert-card p {
+    font-size: 0.9rem;
+    color: #475569;
+    flex-grow: 1;
+}
+
+/* Buttons inside Alerts */
+.alert-card button {
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.15s ease;
+}
+
+/* Contextual actions */
+.alert-card button:contains("Approve"), 
+.alert-card button:first-of-type {
+    background-color: #ecfdf5;
+    color: #059669;
+}
+
+.alert-card button:contains("Approve"):hover,
+.alert-card button:first-of-type:hover {
+    background-color: #d1fae5;
+}
+
+.alert-card button:contains("Reject"),
+.alert-card button:nth-of-type(2) {
+    background-color: #fef2f2;
+    color: #dc2626;
+}
+
+.alert-card button:contains("Reject"):nth-of-type(2):hover {
+    background-color: #fee2e2;
+}
+
+/* Neutral/Review buttons */
+.alert-card button:only-of-type {
+    background-color: #f1f5f9;
+    color: #334155;
+    border-color: #cbd5e1;
+}
+
+.alert-card button:only-of-type:hover {
+    background-color: #e2e8f0;
+}
+
+/* ==========================================================================
+   7. Quick Actions Section
+   ========================================================================== */
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.actions button {
+    background-color: #ffffff;
+    color: #334155;
+    border: 1px solid #cbd5e1;
+    padding: 10px 18px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.actions button:hover {
+    background-color: #f8fafc;
+    border-color: #94a3b8;
+    color: #0f172a;
+}
+
+/* ==========================================================================
+   8. Responsive Design Breakpoints
+   ========================================================================== */
+@media (max-width: 1024px) {
+    .alert-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .alert-card h3 {
+        min-width: auto;
+    }
+    .alert-card p {
+        margin-bottom: 4px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+        padding: 16px;
+    }
+    .sidebar h2 {
+        margin-bottom: 16px;
+    }
+    .sidebar ul {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 8px;
+    }
+    .sidebar li {
+        white-space: nowrap;
+        padding: 8px 12px;
+    }
+    .sidebar li:last-child {
+        margin-top: 0;
+        margin-left: auto;
+    }
+    .main-content {
+        padding: 24px 16px;
+    }
+}

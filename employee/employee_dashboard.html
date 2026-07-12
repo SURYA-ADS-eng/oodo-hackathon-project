@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="employee_dashboard.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Admin Dashboard</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <aside class="sidebar">
+                <h2>AssetFlow</h2>
+
+                <ul>
+                    <li class="active">
+                        <a href="index.html">Dashboard</a>
+                    </li>
+
+                    <li>
+                        <a href="my-assets/my-assets.html">My Assets</a>
+                    </li>
+
+                    <li>
+                        <a href="book-resources\book-resources.html"
+                            >Book Resources</a
+                        >
+                    </li>
+
+                    <li>
+                        <a href="raise-request\raise-request.html"
+                            >Raise Maintenance Request</a
+                        >
+                    </li>
+
+                    <li>
+                        <a href="notification/notification.html"
+                            >Notifications</a
+                        >
+                    </li>
+
+                    <li>
+                        <a href="profile/profile.html">Profile</a>
+                    </li>
+                </ul>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <header class="header">
+                    <h1>Admin Dashboard</h1>
+                    <p>Organization Overview</p>
+                </header>
+
+                <!-- KPI Cards -->
+                <section class="kpi-grid">
+                    <div class="card">
+                        <h3>Total Assets</h3>
+                        <p id="totalAssets">245</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Available Assets</h3>
+                        <p id="availableAssets">87</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Allocated Assets</h3>
+                        <p id="allocatedAssets">132</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Under Maintenance</h3>
+                        <p id="maintenanceAssets">26</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Departments</h3>
+                        <p id="departments">8</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Employees</h3>
+                        <p id="employees">142</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Pending Transfers</h3>
+                        <p id="transfers">5</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Active Audits</h3>
+                        <p id="audits">2</p>
+                    </div>
+                </section>
+
+                <!-- Alerts Section -->
+                <section class="section">
+                    <h2>Requires Attention</h2>
+
+                    <div class="alert-card">
+                        <h3>Pending Role Promotion</h3>
+                        <p>John Doe requested promotion to Department Head.</p>
+                        <button>Approve</button>
+                        <button>Reject</button>
+                    </div>
+
+                    <div class="alert-card">
+                        <h3>Pending Transfer Request</h3>
+                        <p>Laptop AF-0114 transfer from Priya to Raj.</p>
+                        <button>Review</button>
+                    </div>
+
+                    <div class="alert-card">
+                        <h3>Audit Cycle Running</h3>
+                        <p>IT Department Audit - 47% Complete.</p>
+                        <button>View Details</button>
+                    </div>
+                </section>
+
+                <!-- Quick Actions -->
+                <section class="section">
+                    <h2>Quick Actions</h2>
+
+                    <div class="actions">
+                        <button>Add Department</button>
+                        <button>Add Asset Category</button>
+                        <button>Manage Employees</button>
+                        <button>Create Audit Cycle</button>
+                        <button>View Reports</button>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
