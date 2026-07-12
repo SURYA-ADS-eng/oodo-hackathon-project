@@ -32,8 +32,8 @@ This project provides a browser-based prototype for:
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
-cd assests-odoo
+git clone https://github.com/SURYA-ADS-eng/oodo-hackathon-project
+cd admin employee
 ```
 
 ### 2. Install dependencies
