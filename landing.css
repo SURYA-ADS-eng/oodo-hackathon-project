@@ -1,0 +1,192 @@
+/* ==========================================================================
+   Global
+   ========================================================================== */
+
+* {
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+
+    background: #f8fafc;
+
+    color: #1e293b;
+}
+
+/* ==========================================================================
+   Page
+   ========================================================================== */
+
+.page {
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+.hero {
+    text-align: center;
+
+    padding: 60px 20px 40px;
+}
+
+.hero h1 {
+    font-size: 48px;
+
+    color: #2563eb;
+
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 24px;
+
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
+
+.hero span {
+    color: #64748b;
+
+    font-size: 16px;
+}
+
+/* ==========================================================================
+   Role Cards
+   ========================================================================== */
+
+.roles {
+    width: 90%;
+
+    max-width: 1200px;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 30px;
+}
+
+.role-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.role-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 50px;
+
+    margin-bottom: 20px;
+}
+
+.role-card h2 {
+    margin-bottom: 15px;
+}
+
+.role-card p {
+    color: #64748b;
+
+    min-height: 70px;
+}
+
+/* Buttons */
+
+button {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Role Colors */
+
+.admin {
+    border-top: 5px solid #dc2626;
+}
+
+.manager {
+    border-top: 5px solid #f59e0b;
+}
+
+.head {
+    border-top: 5px solid #8b5cf6;
+}
+
+.employee {
+    border-top: 5px solid #16a34a;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+    margin-top: auto;
+
+    padding: 30px;
+
+    color: #64748b;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: 700px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+}
