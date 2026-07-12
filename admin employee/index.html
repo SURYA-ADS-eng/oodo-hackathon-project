@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AssetFlow | Enterprise Asset & Resource Management</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="auth-screen" class="auth-shell">
+      <div class="auth-card">
+        <div class="brand-block">
+          <h1>AssetFlow</h1>
+          <p>Enterprise Asset & Resource Management</p>
+        </div>
+        <form id="login-form" class="stacked-form">
+          <h2>Sign in</h2>
+          <label>
+            Email
+            <input type="email" id="login-email" required />
+          </label>
+          <label>
+            Password
+            <input type="password" id="login-password" required />
+          </label>
+          <button type="submit">Login</button>
+          <a href="#" class="text-link" id="forgot-password">Forgot password?</a>
+        </form>
+        <form id="signup-form" class="stacked-form">
+          <h2>Create employee account</h2>
+          <label>
+            Full name
+            <input type="text" id="signup-name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" id="signup-email" required />
+          </label>
+          <label>
+            Password
+            <input type="password" id="signup-password" required />
+          </label>
+          <button type="submit">Create account</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="app-shell" class="app-shell hidden">
+      <aside class="sidebar">
+        <div class="brand-block">
+          <h2>AssetFlow</h2>
+          <p>ERP-ready operations</p>
+        </div>
+        <nav id="sidebar-nav"></nav>
+      </aside>
+      <div class="main-panel">
+        <header class="topbar">
+          <div>
+            <h3 id="page-title">Dashboard</h3>
+            <p id="page-subtitle">Live overview</p>
+          </div>
+          <div class="topbar-actions">
+            <span id="user-pill" class="pill"></span>
+            <button id="logout-btn" class="secondary-btn">Logout</button>
+          </div>
+        </header>
+        <main id="main-content"></main>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
